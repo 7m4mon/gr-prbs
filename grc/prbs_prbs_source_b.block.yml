@@ -1,0 +1,44 @@
+id: prbs_prbs_source_b
+label: prbs_source_b
+category: '[prbs]'
+
+templates:
+  imports: import prbs
+  make: prbs.prbs_source_b(${g_pn_sel},${g_data_invert},${g_intent_err_rate})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: g_pn_sel
+  label: PN SEL
+  dtype: int
+  default: 0
+  options: [0, 1, 2, 3, 4, 5]
+  option_labels: [PRBS9, PRBS11, PRBS15, PRBS20, PRBS23, PRBS31]
+- id: g_data_invert
+  label: Data Invert
+  dtype: int
+  default: 0
+- id: g_intent_err_rate
+  label: Intent Err Rate
+  dtype: float
+  default: 0
+
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:a
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+
+outputs:
+- label: out
+  dtype: int
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1
