@@ -20,6 +20,6 @@ sudo make install
 sudo ldconfig
 ```
 
-The method for getting the BERT key is the brute force method.
+The method for getting the BERT key is the brute force method.  
 Therefore, a high-speed machine is required for PN15 and above.
 
