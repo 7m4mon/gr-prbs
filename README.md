@@ -1,4 +1,4 @@
-PRBS Pattern Generator and Bit Error Rate Tester (BERT) OOT module for GNU Radio Companion (V3.8 or later)
+PRBS Pattern Generator and Bit Error Rate Tester (BERT) OOT modules for GNU Radio Companion (V3.8 or later)
 
 <img src="https://github.com/7m4mon/gr-prbs/blob/main/prbs_source.png" alt="" title="">  
 <img src="https://github.com/7m4mon/gr-prbs/blob/main/prbs_sink.PNG" alt="" title="">  
@@ -10,7 +10,7 @@ PRBS Pattern Generator and Bit Error Rate Tester (BERT) OOT module for GNU Radio
 * Written by C++
 
 
-How to build OOT module  
+How to build OOT blocks.  
 ```
 mkdir build
 cd build
@@ -21,5 +21,5 @@ sudo ldconfig
 ```
 
 The method for getting the BERT key is the brute force method.  
-Therefore, a high-speed machine is required for PN15 and above.
+Therefore, a high-speed machine is required for PN15 and more.
 
